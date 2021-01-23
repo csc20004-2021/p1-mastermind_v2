@@ -17,6 +17,22 @@
         <junit.platform.version>1.5.2</junit.platform.version>
     </properties>
 
+    <repositories>
+      <repository>
+        <id>mm-repo</id>
+        <name>Un nome</name>
+        <url>https://raw.githubusercontent.com/csc20004-2021/p1-mastermind_v2/mmjar</url>
+      </repository>
+    </repositories>
+
+    <dependencies>
+      <dependency>
+        <groupId>uk.ac.keele.csc20004</groupId>
+        <artifactId>mmjar</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
