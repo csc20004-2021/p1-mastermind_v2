@@ -29,8 +29,9 @@ public class MasterMind {
         Scanner scanner = new Scanner(System.in);
 
         int result = 0;
-        while(result != 44) {
+        while(result != 44) { /* you need to change the termination check */
             System.out.print("Enter code: ");
+            /* change the following line to make it 'tough' */
             ColourCode inputCode = new ColourCode(scanner.next());
             result = inputCode.compareTo(masterCode);
             System.out.println("C:" + (result/10) + "  P:" + (result - ((result/10)*10)));
